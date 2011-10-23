@@ -1,0 +1,43 @@
+skySMP - SkyBlock Survival Multiplayer Implementation:
+Version: v0.1.1
+
+Multiplayer implementation of the popular SkyBlock Survival map.
+This mod adds commands for users to generate their own Island to survive on
+in the sky. Every player can have exactly one island (and reset it if he
+feels like starting over). Try to survive with only minimal resources and
+complete the challenges.
+
+
+Usage: 
+The plugin can be installed on any World, however it is recommended to run it
+on a dedicated world in "pure mode". If you wish to use the plugin on a
+regular world , just copy the .jar to /plugins/ and you are good to go.
+
+Pure Mode
+In pure mode, no map except for a spawn area and the islands is ever generated.
+This means that players cannot go on land to 'cheat'. It also looks a lot better
+in my opinion. To use the plugin in pure mode, just follow these easy instructions:
+1. Copy the plugin to /plugin/ like usual
+2. get cleanroomGenerator and also copy it to the bukkit plugin folder
+3. add this to the end of your bukkit.yml[CODE]worlds:
+
+    skyIsland:
+
+        generator: CleanroomGenerator:.[/CODE]
+
+4. change level-name in server.properies to "skyIsland" and allow-flight to "true"
+
+(the world _must_ be named skyIsland, if it is not the plugin will not
+
+generate a spawn location)
+
+Features:
+[*] Able to create a complete Island for every player
+[*] OP command to delete Islands of player
+[*] Automatically arranges islands in space and fill spots of deleted islands
+[*] On death, players are brought back to their islands or can go back any time with /tphome
+[*] Works with cleanroomGenerator to create a "pure" SkyBlock World
+
+Credit goes to:
+Noobcrew for providing the original map, the idea and the challenges.
+Azunai of gamerevision.com for help with the code and providing a server to debug on.

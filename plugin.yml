@@ -1,0 +1,27 @@
+name: skySMP
+main: de.qgel.skySMP.skySMP
+version: 0.1.1
+description: skyIsland SMP mod. Survive on a small island in the sky with only basic supplies. Try to beat the challenges.
+softdepend: [CleanroomGenerator]
+author: Qgel
+commands:
+    newIsland:
+        description: Creates a new SkyIsland.
+        usage:  |
+             /newIsland [replace]
+    removeIsland:
+        description: Removes the island of a given player.
+        usage:  |
+            /removeIsland <playername>
+    tphome:
+        description: Teleport to your island.
+        usage:  |
+            /tphome
+    skyHelp:
+        description: Outputs all the commands and info about the skySMP plugin
+        usage:  |
+            /skyHelp [c(hallenges)]
+    skydev:
+        description: Outputs dev data
+        usage:  |
+            /skydev <lastisland>
